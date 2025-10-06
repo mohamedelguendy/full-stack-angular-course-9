@@ -1,0 +1,60 @@
+/* Full screen gradient background */
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* The info card */
+.info-box {
+  background: white;
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  max-width: 400px;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Heading */
+.info-box h2 {
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+/* Paragraphs */
+.info-box p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* Hobbies styling */
+.info-box .hobbies {
+  margin-top: 1rem;
+}
+
+.info-box .hobbies span {
+  display: inline-block;
+  background: #4facfe;
+  color: white;
+  padding: 6px 12px;
+  margin: 4px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  transition: transform 0.2s;
+}
+
+.info-box .hobbies span:hover {
+  transform: scale(1.1);
+}
+
+/* Simple fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

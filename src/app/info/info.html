@@ -1,0 +1,24 @@
+<div class="info">
+  <h2>About Me</h2>
+  <ul>
+    <li><strong>Name:</strong> {{ name }}</li>
+    <li><strong>Age:</strong> {{ age }}</li>
+    <li><strong>Location:</strong> {{ location }}</li>
+    <li><strong>Hobbies:</strong> 
+      <span *ngFor="let hobby of hobbies">{{ hobby }} </span>
+    </li>
+  </ul>
+</div>
+
+<div class="info-box">
+  <h2>About Me</h2>
+  <p><strong>Name:</strong> {{ name }}</p>
+  <p><strong>Age:</strong> {{ age }}</p>
+  <p><strong>Location:</strong> {{ location }}</p>
+
+  <div class="hobbies">
+    <strong>Hobbies:</strong><br>
+    <span *ngFor="let hobby of hobbies">{{ hobby }}</span>
+  </div>
+</div>
+
